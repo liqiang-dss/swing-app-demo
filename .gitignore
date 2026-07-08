@@ -1,0 +1,62 @@
+# .gitignore for swing-demo-app (Java / Maven)
+
+# Maven build output
+/target/
+/target/**
+
+# Generated sources
+/generated-sources/
+/target/generated-sources/
+
+# Maven artifacts
+dependency-reduced-pom.xml
+release.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+buildNumber.properties
+maven-status/
+
+# IDE / editor
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.vscode/
+
+# Compiled class files
+*.class
+
+# Logs & temporary files
+*.log
+*.tmp
+*.temp
+*~
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# JVM crash logs
+hs_err_pid*
+
+# Coverage & reports
+jacoco.exec
+coverage/
+
+# Ignore jars produced by the build (but keep `libs/` if vendor jars are tracked there)
+/target/*.jar
+
+# Ignore files under libs/ but keep the directory tracked (add libs/.gitkeep or README.md)
+libs/**
+!libs/.gitkeep
+!libs/README.md
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
